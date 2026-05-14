@@ -41,15 +41,15 @@ Both solutions include:
 
 ```mermaid
 classDiagram
-{    class Program 
-    {
+    class Program {
         +Main()
         +RunMenu()
         +SingleNumber(int[] nums) int
         +MissingNumber(int[] nums) int
         +RunTests()
     }
-}
+```
+
 Single Number (XOR Method)
 
 XOR Rules:
