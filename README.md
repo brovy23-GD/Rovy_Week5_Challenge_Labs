@@ -48,37 +48,60 @@ classDiagram
         +MissingNumber(int[] nums) int
         +RunTests()
     }
-```
 
 Single Number (XOR Method)
 
-XOR Rules:
+```
+-----------------------------------------
+ SINGLE NUMBER — XOR WHITEBOARD DIAGRAM
+-----------------------------------------
+
+Array:
+[ 4 , 1 , 2 , 1 , 2 ]
+
+Accumulator (XOR):
+acc = 0
+
+Step-by-step:
+acc ^ 4 = 4
+acc ^ 1 = 4 ^ 1 = 5
+acc ^ 2 = 5 ^ 2 = 7
+acc ^ 1 = 7 ^ 1 = 6
+acc ^ 2 = 6 ^ 2 = 4
+
+Final Answer:
+4
+
+-----------------------------------------
+ KEY XOR RULES
+-----------------------------------------
 a ^ a = 0
 a ^ 0 = a
-Order does not matter.
+Order does not matter (commutative)
+-----------------------------------------
+```
 
-Example:
-[4, 1, 2, 1, 2]
+---
 
-Walkthrough:
-0 ^ 4 = 4
-4 ^ 1 = 5
-5 ^ 2 = 7
-7 ^ 1 = 6
-6 ^ 2 = 4
+# 🧠 Whiteboard Diagram — Missing Number (Gauss Formula)
 
-Answer = 4
+```
+-----------------------------------------
+ MISSING NUMBER — GAUSS FORMULA DIAGRAM
+-----------------------------------------
 
-Missing Number (Gauss Formula)
-
-Expected sum = n * (n + 1) / 2
-
-Example:
-[3, 0, 1]
+Array:
+[ 3 , 0 , 1 ]
 
 n = 3
-Expected = 3 * 4 / 2 = 6
-Actual = 3 + 0 + 1 = 4
+
+Expected Sum:
+n * (n + 1) / 2
+= 3 * 4 / 2
+= 6
+
+Actual Sum:
+3 + 0 + 1 = 4
 
 Missing = 6 - 4 = 2
 
@@ -105,8 +128,8 @@ Space	O(1)
 -Exit
 
 Program Flowchart
+mermaid
 
-```mermaid
 flowchart TD
     A[Start] --> B[Display Menu]
     B --> C{User Choice}
@@ -118,7 +141,6 @@ flowchart TD
     E --> B
     F --> B
     G --> H[End]
-```
 
 
  📂 Project Structure
@@ -130,33 +152,42 @@ Rovy Week5 Challenge Labs/
 ├── LICENSE
 ├── .gitignore
 └── (bin/ and obj/ ignored)
+```
 
-🧪 Test Cases
+---
 
-Single Number Tests
+# 🧪 Test Cases
 
+### **Single Number Tests**
+```
 [2,2,1] → 1
 [4,1,2,1,2] → 4
 [1] → 1
+```
 
-Missing Number Tests
-
+### **Missing Number Tests**
+```
 [3,0,1] → 2
 [0,1] → 2
 [9,6,4,2,3,5,7,0,1] → 8
+```
 
-📝 Instructor Notes
+---
+
+# 📝 Instructor Notes
+
 This project demonstrates:
 
-✔ Understanding of XOR bitwise operations
-✔ Understanding of Gauss summation formula
-✔ Clean C# implementation
-✔ Menu-driven console UI
-✔ Proper GitHub repo structure
-✔ Professional documentation
+✔ Understanding of XOR bitwise operations  
+✔ Understanding of Gauss summation formula  
+✔ Clean C# implementation  
+✔ Menu-driven console UI  
+✔ Proper GitHub repo structure  
+✔ Professional documentation  
 
-📄 License
+---
+
+# 📄 License
 
 MIT License  
 This project is licensed under the **MIT License**.
-
