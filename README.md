@@ -105,8 +105,8 @@ Space	O(1)
 -Exit
 
 Program Flowchart
-mermaid
 
+```mermaid
 flowchart TD
     A[Start] --> B[Display Menu]
     B --> C{User Choice}
@@ -118,6 +118,7 @@ flowchart TD
     E --> B
     F --> B
     G --> H[End]
+```
 
 
  📂 Project Structure
